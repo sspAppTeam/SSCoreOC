@@ -1,9 +1,9 @@
 {
   "name": "SSCoreOC",
   "version": "0.1.0",
-  "summary": "A short description of SSCoreOC.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/SSPSource/SSCoreOC",
+  "summary": "基础类库",
+  "description": "base ,分类 等",
+  "homepage": "https://github.com/sspAppTeam/SSCoreOC",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "SSPSource": "2316585240@qq.com"
   },
   "source": {
-    "git": "https://github.com/SSPSource/SSCoreOC.git",
+    "git": "https://github.com/sspAppTeam/SSCoreOC.git",
     "tag": "0.1.0"
   },
   "platforms": {
