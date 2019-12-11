@@ -1,0 +1,23 @@
+{
+  "name": "SSCoreOC",
+  "version": "0.1.0",
+  "summary": "A short description of SSCoreOC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SSPSource/SSCoreOC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SSPSource": "2316585240@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/SSPSource/SSCoreOC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SSCoreOC/Classes/**/*",
+  "frameworks": "UIKit"
+}

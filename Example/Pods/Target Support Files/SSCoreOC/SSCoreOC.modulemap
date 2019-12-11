@@ -1,0 +1,6 @@
+framework module SSCoreOC {
+  umbrella header "SSCoreOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

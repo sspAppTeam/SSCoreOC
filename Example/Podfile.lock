@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - SSCoreOC (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - SSCoreOC (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  SSCoreOC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SSCoreOC: e1dce17054da9451c262c427ad1ebc7e03ceb0c9
+
+PODFILE CHECKSUM: 3a41575f431fc112f4e207242a40bdd07bedfb31
+
+COCOAPODS: 1.8.4

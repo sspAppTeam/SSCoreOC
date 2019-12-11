@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0352848890983CC397FDCCF0 /* SSCoreOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SSCoreOC.podspec; path = ../SSCoreOC.podspec; sourceTree = "<group>"; };
+		0352848890983CC397FDCCF0 /* SSCoreOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSCoreOC.podspec; path = ../SSCoreOC.podspec; sourceTree = "<group>"; };
 		0DDEAA888D642016197BAF0F /* Pods-SSCoreOC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSCoreOC_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SSCoreOC_Tests/Pods-SSCoreOC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		18EF9FDC2CF56ED8AB532D8B /* Pods-SSCoreOC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSCoreOC_Example.release.xcconfig"; path = "Target Support Files/Pods-SSCoreOC_Example/Pods-SSCoreOC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SSCoreOC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSCoreOC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,9 +59,9 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6B7459125455EEE88CA724D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6B7459125455EEE88CA724D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7B4AD9974F6B50AEA6D49B47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7B4AD9974F6B50AEA6D49B47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9232C708567CAA54206D6838 /* Pods_SSCoreOC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSCoreOC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8526A61162D9616D62D9B30 /* Pods_SSCoreOC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSCoreOC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				0DDEAA888D642016197BAF0F /* Pods-SSCoreOC_Tests.debug.xcconfig */,
 				E9141E901345F906F211AAF0 /* Pods-SSCoreOC_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = SSPSource;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 57FD26NT87;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -513,6 +516,7 @@
 			baseConfigurationReference = F27DD090974E1A37147CFDFE /* Pods-SSCoreOC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57FD26NT87;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SSCoreOC/SSCoreOC-Prefix.pch";
 				INFOPLIST_FILE = "SSCoreOC/SSCoreOC-Info.plist";
@@ -529,6 +533,7 @@
 			baseConfigurationReference = 18EF9FDC2CF56ED8AB532D8B /* Pods-SSCoreOC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57FD26NT87;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SSCoreOC/SSCoreOC-Prefix.pch";
 				INFOPLIST_FILE = "SSCoreOC/SSCoreOC-Info.plist";
