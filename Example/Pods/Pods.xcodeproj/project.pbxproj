@@ -25,6 +25,8 @@
 		4F89E6F8CDA7B5088930832CD54A8937 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D741C6892B5D4F9787D452F307470F /* NSData+Base64.m */; };
 		618A9E99CEED84BF446BF9E3B285D6AA /* SSBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7196CA43F49DECDD1933D6DFEEB5893F /* SSBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
+		6C70FBF623A1D03000EFE48A /* UIButton+SDButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C70FBF423A1D03000EFE48A /* UIButton+SDButton.h */; };
+		6C70FBF723A1D03000EFE48A /* UIButton+SDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C70FBF523A1D03000EFE48A /* UIButton+SDButton.m */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */; };
 		6FE2BF9521B3FBE727119C14CB12F7A9 /* UIButton+SSContentExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB47685ADD8742CE0F0674A5C6127BA /* UIButton+SSContentExtention.m */; };
 		70A116C317E7E5E886719EB067C316E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
@@ -91,13 +93,13 @@
 		13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		18CF1A0ABC1B9DB1336F0206FEBEE6D3 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = SSCoreOC/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		1A5E9DA6FC0C103CD2486DF39BEDABEA /* UIView+GestureBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureBlock.m"; sourceTree = "<group>"; };
-		1B66CAFFEEC648C4C2BD818AC059A15F /* SSCoreOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSCoreOC.framework; path = SSCoreOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B66CAFFEEC648C4C2BD818AC059A15F /* SSCoreOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSCoreOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6B636E64BCDF995A818C868FCD6142 /* SSCoreOC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSCoreOC-dummy.m"; sourceTree = "<group>"; };
 		1B8ABEEA76ECDF1975B6D0787700F929 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		1DBFC7982DD7F4ABA9715730EA59CB78 /* NSDate+Category.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
-		21CF0AAA0669B6F16F27BC82F0F69785 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		21CF0AAA0669B6F16F27BC82F0F69785 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		266BB1447C408DE56214E6E5896D848F /* Pods-SSCoreOC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSCoreOC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3220E34972555864EB68404498CCD070 /* Pods_SSCoreOC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSCoreOC_Example.framework; path = "Pods-SSCoreOC_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3220E34972555864EB68404498CCD070 /* Pods_SSCoreOC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSCoreOC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		382C51EA93C47DC61A943F659FAD9B1A /* Pods-SSCoreOC_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSCoreOC_Example-umbrella.h"; sourceTree = "<group>"; };
 		3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		3A9116DD2224031F600D2AEDBD64C1E2 /* SSBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SSBaseViewController.m; sourceTree = "<group>"; };
@@ -109,11 +111,13 @@
 		518FFD05232ED40BEC03B0DC71DA5034 /* SSCoreOC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCoreOC-prefix.pch"; sourceTree = "<group>"; };
 		54CD044F6BFAB71E80B856C4F3967BFF /* NSObject+SSCurrentVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+SSCurrentVC.h"; sourceTree = "<group>"; };
 		5B19F9166D43B295F60E04F43804946A /* Pods-SSCoreOC_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSCoreOC_Example-Info.plist"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		61881568CE94DC5BA695757C33CD4212 /* Pods-SSCoreOC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSCoreOC_Example-dummy.m"; sourceTree = "<group>"; };
 		6524381ECF6C272A4256920BDD080432 /* Pods-SSCoreOC_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSCoreOC_Tests-umbrella.h"; sourceTree = "<group>"; };
 		67624090613257B7F7269ACB6FE90A42 /* UIButton+SSContentExtention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+SSContentExtention.h"; sourceTree = "<group>"; };
+		6C70FBF423A1D03000EFE48A /* UIButton+SDButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SDButton.h"; sourceTree = "<group>"; };
+		6C70FBF523A1D03000EFE48A /* UIButton+SDButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SDButton.m"; sourceTree = "<group>"; };
 		6DC20301A1629F1F2ABEDD1D9F65228A /* CategoryHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7196CA43F49DECDD1933D6DFEEB5893F /* SSBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SSBaseViewController.h; sourceTree = "<group>"; };
@@ -126,12 +130,12 @@
 		88EE4F95531D217A595AA8D85A24FA39 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8D865456913D11AC84FE81BF2807594E /* Pods-SSCoreOC_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSCoreOC_Example.modulemap"; sourceTree = "<group>"; };
-		8E091DE6E492420E054BA815EEFD48FD /* SSCoreOC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SSCoreOC.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E091DE6E492420E054BA815EEFD48FD /* SSCoreOC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SSCoreOC.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		95E6D7DFF01283B1A497B7142E2431B2 /* Pods-SSCoreOC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSCoreOC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		97AEDE9B53AAA795162118B38C61D4AE /* UIViewController+SSNavigationItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SSNavigationItem.m"; sourceTree = "<group>"; };
 		98FD387DFA194173633270BAF1BCD859 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		A3D4697DDAC586E3EB4D168C24B4D8F0 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
 		A788F6393B2F7AA596897E158DC37FA3 /* Pods-SSCoreOC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSCoreOC_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +144,7 @@
 		ABC8DD561DD34976705D43B62B2B779D /* Pods-SSCoreOC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSCoreOC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		B1A27CCFB662C6749B1148FFE0FDD357 /* Pods-SSCoreOC_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSCoreOC_Tests-dummy.m"; sourceTree = "<group>"; };
-		B84CA2088DC3386E4E8E8981A630F0CF /* Pods_SSCoreOC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSCoreOC_Tests.framework; path = "Pods-SSCoreOC_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84CA2088DC3386E4E8E8981A630F0CF /* Pods_SSCoreOC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSCoreOC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA799ABBD503C0E15AD4A38F2DBAEF7C /* SSCoreOC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCoreOC-umbrella.h"; sourceTree = "<group>"; };
 		BED947E39613A4328AE5B7B55224D843 /* SSCoreOC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSCoreOC.modulemap; sourceTree = "<group>"; };
 		C98BAEC3D5DA3A04C54FFD6A77A527F2 /* UIViewController+SSNavigationItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SSNavigationItem.h"; sourceTree = "<group>"; };
@@ -153,7 +157,7 @@
 		E45BD35E95C3547E4A424C826D2443AB /* SSCoreOC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSCoreOC.xcconfig; sourceTree = "<group>"; };
 		E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		EF32C51F74FFD48046CA16BA7994C105 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EF32C51F74FFD48046CA16BA7994C105 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		F23DE2AA95C3111DD6F52A8B4483BEC4 /* NSDate+Category.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
 		F7579C15460FD8534D2D6CFCA84962FF /* SSCoreOC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSCoreOC-Info.plist"; sourceTree = "<group>"; };
@@ -232,7 +236,6 @@
 				1DBFC7982DD7F4ABA9715730EA59CB78 /* NSDate+Category.h */,
 				F23DE2AA95C3111DD6F52A8B4483BEC4 /* NSDate+Category.m */,
 			);
-			name = NSDate;
 			path = NSDate;
 			sourceTree = "<group>";
 		};
@@ -309,7 +312,6 @@
 				45E4BEB48F67ECE4946F86A2669DF19F /* Support Files */,
 				820C839EC049005CB82FAAF13AFDCB95 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -368,7 +370,6 @@
 				A3D4697DDAC586E3EB4D168C24B4D8F0 /* NSDateFormatter+Category.h */,
 				AB83ED61CCEAD77BBE05680C593B2776 /* NSDateFormatter+Category.m */,
 			);
-			name = NSDateFormatter;
 			path = NSDateFormatter;
 			sourceTree = "<group>";
 		};
@@ -438,6 +439,8 @@
 				1A5E9DA6FC0C103CD2486DF39BEDABEA /* UIView+GestureBlock.m */,
 				1D99383720C3D15AC089922630D3F773 /* NSDate */,
 				C0885D9021225C3AD264DD5637D3986C /* NSDateFormatter */,
+				6C70FBF423A1D03000EFE48A /* UIButton+SDButton.h */,
+				6C70FBF523A1D03000EFE48A /* UIButton+SDButton.m */,
 			);
 			name = Category;
 			path = SSCoreOC/Classes/Category;
@@ -477,6 +480,7 @@
 				8AF72CDADB493382325629396D21BE4F /* NSData+Base64.h in Headers */,
 				D5BCA1187AB3CC50725D1C75BB6C7E18 /* NSDate+Category.h in Headers */,
 				1B259829220B70B57D8901A9FAA9DF99 /* NSDateFormatter+Category.h in Headers */,
+				6C70FBF623A1D03000EFE48A /* UIButton+SDButton.h in Headers */,
 				98754E1E7034A54842BF7F86B2DDF9F4 /* NSObject+SSCurrentVC.h in Headers */,
 				618A9E99CEED84BF446BF9E3B285D6AA /* SSBaseViewController.h in Headers */,
 				D69E73574BCF2C80018806BD53190647 /* SSCoreOC-umbrella.h in Headers */,
@@ -676,6 +680,7 @@
 				10BD23D4D3CA7BB729D2B6BC23B24539 /* NSObject+SSCurrentVC.m in Sources */,
 				FD50EA404BE405E13344A8B3DE15E343 /* ReplaceMe.m in Sources */,
 				3D2CEC4B19F1A442F6108D139543B76A /* SSBaseViewController.m in Sources */,
+				6C70FBF723A1D03000EFE48A /* UIButton+SDButton.m in Sources */,
 				B19DD06EAF531AA1D5F1873568E45AD2 /* SSCoreOC-dummy.m in Sources */,
 				6FE2BF9521B3FBE727119C14CB12F7A9 /* UIButton+SSContentExtention.m in Sources */,
 				D0B0D96F0DB57CB7EF81CCC346FE4BED /* UIView+GestureBlock.m in Sources */,
@@ -827,8 +832,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

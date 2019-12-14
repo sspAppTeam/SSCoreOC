@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0352848890983CC397FDCCF0 /* SSCoreOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSCoreOC.podspec; path = ../SSCoreOC.podspec; sourceTree = "<group>"; };
+		0352848890983CC397FDCCF0 /* SSCoreOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSCoreOC.podspec; path = ../SSCoreOC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0DDEAA888D642016197BAF0F /* Pods-SSCoreOC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSCoreOC_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SSCoreOC_Tests/Pods-SSCoreOC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		18EF9FDC2CF56ED8AB532D8B /* Pods-SSCoreOC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSCoreOC_Example.release.xcconfig"; path = "Target Support Files/Pods-SSCoreOC_Example/Pods-SSCoreOC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SSCoreOC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSCoreOC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
