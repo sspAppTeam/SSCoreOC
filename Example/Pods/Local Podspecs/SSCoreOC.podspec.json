@@ -1,6 +1,6 @@
 {
   "name": "SSCoreOC",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "基础类库",
   "description": "base ,分类 等",
   "homepage": "https://github.com/sspAppTeam/SSCoreOC",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sspAppTeam/SSCoreOC.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
