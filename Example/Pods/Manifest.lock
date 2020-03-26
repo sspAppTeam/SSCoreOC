@@ -7,7 +7,7 @@ PODS:
   - SDWebImage (5.4.0):
     - SDWebImage/Core (= 5.4.0)
   - SDWebImage/Core (5.4.0)
-  - SSCoreOC (0.1.1):
+  - SSCoreOC (0.1.2):
     - SDWebImage
 
 DEPENDENCIES:
@@ -26,8 +26,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
-  SSCoreOC: fde58173314afab4d372ac58c5a70a86a1d784e4
+  SSCoreOC: adfe138ab6cecd9200c04e7fb70b82e47acd1f58
 
-PODFILE CHECKSUM: 3a41575f431fc112f4e207242a40bdd07bedfb31
+PODFILE CHECKSUM: eb69a61dde87a1963e24efb0912da1800cd455bd
 
 COCOAPODS: 1.8.4

@@ -79,6 +79,10 @@ NS_ASSUME_NONNULL_BEGIN
  dismissVC
  */
 - (void)dismissVC;
+
+#pragma mark - 加载图片资源
+-(UIImage*)loadLocalImgResource:(NSString*)imgstr;
+
 @end
 
 NS_ASSUME_NONNULL_END

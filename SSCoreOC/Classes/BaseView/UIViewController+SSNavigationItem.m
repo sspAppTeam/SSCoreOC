@@ -14,8 +14,10 @@
 - (void)setNavigationItemBackItem {
     UIButton *itemBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     itemBtn.frame = CGRectMake(0, 0, 44, 44);
-    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(@"WLBaseView")];
-    UIImage *image = [UIImage imageNamed:@"icon_back" inBundle:bundle compatibleWithTraitCollection:nil];
+
+    UIImage *image=[self loadLocalImgResource:@"icon_back"];
+   
+    [itemBtn setBackgroundColor:[UIColor redColor]];
     [itemBtn setImage:image forState:UIControlStateNormal];
     [itemBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 5)];
     itemBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -24,9 +26,9 @@
     self.navigationItem.leftBarButtonItem = item;
     
     // 注意：此api只能在iOS 11之前的系统生效
-//    UIBarButtonItem * spaceItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-//    spaceItem.width = -5;
-//    self.navigationItem.leftBarButtonItems = @[spaceItem, item];
+    //    UIBarButtonItem * spaceItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    //    spaceItem.width = -5;
+    //    self.navigationItem.leftBarButtonItems = @[spaceItem, item];
 }
 
 - (void)setNavigationItemLeftBarButtonItem:(SEL)btnSel withTitle:(NSString *)title withTitleColor:(UIColor *)color {
@@ -103,5 +105,88 @@
 
 - (void)dismissVC {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+//加载图片
+-(UIImage*)loadLocalImgResource:(NSString*)imgstr{
+    UIImage *img;
+    img=[self noUseFrameWorkByBundleMethod:imgstr];
+    if (!img) {
+        img = [self noUseFrameWorkMethod:imgstr];
+        if (!img) {
+           img = [self useFrameWorkByBundleMethod:imgstr];
+            if (!img) {
+                 img = [self useFrameWorkMethod:imgstr];
+            }
+        }
+    }
+    return img;
+}
+#pragma mark - pod图片资源加载注意
+//Podfile中未使用use_frameworks!
+//s.resource_bundles = {
+//  'SSCoreOCImg' => ['SSCoreOC/Assets/*']
+//}
+//自动创建SSCoreOCImg.bundle
+-(UIImage*)noUseFrameWorkByBundleMethod:(NSString *)imgStr{
+    UIImage *image;
+//    方法一
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"SSCoreOCImg" withExtension:@"bundle"];
+           if (bundleURL) {
+               NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+               NSInteger scale = [[UIScreen mainScreen] scale];
+               NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", imgStr,scale];
+              image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
+           }
+//    方法二
+//    NSString *imgName = [NSString stringWithFormat:@"%@/%@", @"SSCoreOCImg.bundle",imgStr];
+//    image = [UIImage imageNamed:imgName];
+    
+    return image;
+}
+//s.resources = ['HFMyTest/Assets/*']
+-(UIImage*)noUseFrameWorkMethod:(NSString *)imgStr{
+     UIImage *image;
+    image = [UIImage imageNamed:@"icon_back"];
+    return image;
+}
+
+//Podfile中使用use_frameworks!
+//s.resource_bundles = {
+//  'SSCoreOCImg' => ['SSCoreOC/Assets/*']
+//}
+-(UIImage*)useFrameWorkByBundleMethod:(NSString *)imgStr{
+    //到指定目录
+     UIImage *image;
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+    bundleURL = [bundleURL URLByAppendingPathComponent:@"SSCoreOC"];
+    bundleURL = [bundleURL URLByAppendingPathExtension:@"framework"];
+    if (bundleURL) {
+        NSBundle *imgBundle = [NSBundle bundleWithURL:bundleURL];
+        bundleURL = [imgBundle URLForResource:@"SSCoreOCImg" withExtension:@"bundle"];
+        if (bundleURL) {
+            NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+            NSInteger scale = [[UIScreen mainScreen] scale];
+            NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", imgStr,scale];
+           image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
+        }
+    }
+    
+    return image;
+}
+//s.resources = ['HFMyTest/Assets/*']
+-(UIImage*)useFrameWorkMethod:(NSString *)imgStr{
+    //到指定目录
+    UIImage *image;
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+    bundleURL = [bundleURL URLByAppendingPathComponent:@"SSCoreOC"];
+    bundleURL = [bundleURL URLByAppendingPathExtension:@"framework"];
+    if (bundleURL) {
+        NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+        NSInteger scale = [[UIScreen mainScreen] scale];
+        NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", imgStr,scale];
+       image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
+    }
+    
+    return image;
 }
 @end

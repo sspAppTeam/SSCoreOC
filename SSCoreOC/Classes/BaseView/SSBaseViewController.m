@@ -7,14 +7,14 @@
 //
 
 #import "SSBaseViewController.h"
-//#import "MacroHeader.h"
+#import "SSCoreWork.h"
 @interface SSBaseViewController ()
 @property (nonatomic, getter=isViewAppeared) BOOL viewAppeared;
 @end
 
 @implementation SSBaseViewController
 
-
+#pragma mark - 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initialize];
@@ -27,6 +27,7 @@
     if (!self.leftBarBtnHidden) {
         [self setNavigationItemBackItem];
     }
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -43,8 +44,8 @@
 - (void)initialize {
     self.navigationBarHidden = NO;
     self.toolbarHidden = YES;
-//    self.titleColor = red_color;
-//    self.view.backgroundColor = white_color;
+    self.titleColor = red_color;
+    self.view.backgroundColor = white_color;
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
@@ -82,6 +83,7 @@
 }
 
 - (void)dealloc {
+    NSLog(@"123");
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 

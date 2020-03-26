@@ -1,6 +1,6 @@
 {
   "name": "SSCoreOC",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "基础类库",
   "description": "base ,分类 等",
   "homepage": "https://github.com/sspAppTeam/SSCoreOC",
@@ -13,12 +13,17 @@
   },
   "source": {
     "git": "https://github.com/sspAppTeam/SSCoreOC.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "SSCoreOC/Classes/**/*",
+  "resource_bundles": {
+    "SSCoreOCImg": [
+      "SSCoreOC/Assets/*"
+    ]
+  },
   "frameworks": "UIKit",
   "dependencies": {
     "SDWebImage": [

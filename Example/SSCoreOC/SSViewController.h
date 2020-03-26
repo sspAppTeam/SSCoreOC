@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-
-@interface SSViewController : UIViewController
+#import <SSCoreOC/SSCoreWork.h>
+@interface SSViewController : SSBaseViewController
 
 @end
