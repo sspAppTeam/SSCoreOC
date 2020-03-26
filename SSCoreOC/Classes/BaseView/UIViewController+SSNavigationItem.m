@@ -17,7 +17,7 @@
 
     UIImage *image=[self loadLocalImgResource:@"icon_back"];
    
-    [itemBtn setBackgroundColor:[UIColor redColor]];
+    [itemBtn setBackgroundColor:[UIColor clearColor]];
     [itemBtn setImage:image forState:UIControlStateNormal];
     [itemBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 5)];
     itemBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;

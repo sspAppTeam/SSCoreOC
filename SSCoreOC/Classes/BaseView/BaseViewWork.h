@@ -10,15 +10,11 @@
 
 
 
-#if __has_include(<SSNetWork/SSNetWork.h>)
+#if __has_include(<SSCoreOC/BaseViewWork.h>)
 
 #import <SSCoreOC/UIViewController+SSNavigationItem.h>
 #import <SSCoreOC/SSBaseViewController.h>
-
 #else
-
-//cata
-
 #import "UIViewController+SSNavigationItem.h"
 #import "SSBaseViewController.h"
 //baseview

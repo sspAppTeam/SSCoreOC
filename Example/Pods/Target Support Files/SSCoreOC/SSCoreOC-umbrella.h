@@ -20,6 +20,7 @@
 #import "NSObject+SSCurrentVC.h"
 #import "UIButton+SDButton.h"
 #import "UIButton+SSContentExtention.h"
+#import "UIImage+tool.h"
 #import "UIView+GestureBlock.h"
 #import "AdaptConst.h"
 #import "ColorConst.h"

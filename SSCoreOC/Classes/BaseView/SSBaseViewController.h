@@ -38,6 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) UIImage *navigationBarImage;
 
+/**
+ *  导航栏背景颜色及状态栏
+ */
+@property (nonatomic, strong) UIColor *navigationBarColor;
+
 
 /**
  *  状态栏样式
@@ -55,6 +60,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  富文本title，如果设置了则title，titlecolor失效
  */
 @property (nonatomic, copy) NSDictionary *titleTextAttributes;
+/**
+*  ios11后的大标题。只在UITableView，UIScrollView起作用
+*/
+@property (nonatomic,assign)BOOL isLargeTitles;
 @end
 
 NS_ASSUME_NONNULL_END

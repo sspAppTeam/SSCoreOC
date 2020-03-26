@@ -10,15 +10,16 @@
 #define CategoryHeader_h
 
 
-#if __has_include(<SSNetWork/SSNetWork.h>)
+#if __has_include(<SSCoreOC/CategoryHeader.h>)
 
 #import <SSCoreOC/NSObject+SSCurrentVC.h>
 #import <SSCoreOC/UIButton+SSContentExtention.h>
 #import <SSCoreOC/UIView+GestureBlock.h>
 #import <SSCoreOC/UIButton+SDButton.h>
 #import <SSCoreOC/NSData+Base64.h>
-#import <SSCoreOC/NSDate+Categor.h>
+#import <SSCoreOC/NSDate+Category.h>
 #import <SSCoreOC/NSDateFormatter+Category.h>
+#import <SSCoreOC/UIImage+tool.h>
 
 #else
 
@@ -29,6 +30,7 @@
 #import "NSData+Base64.h"
 #import "NSDate+Category.h"
 #import "NSDateFormatter+Category.h"
+#import "UIImage+tool.h"
 
 #endif /* __has_include */
 #endif /* CategoryHeader_h */

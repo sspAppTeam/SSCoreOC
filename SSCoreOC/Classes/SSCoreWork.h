@@ -7,7 +7,7 @@
 
 #ifndef SSCoreWork_h
 #define SSCoreWork_h
-#if __has_include(<SSNetWork/SSNetWork.h>)
+#if __has_include(<SSCoreOC/SSCoreWork.h>)
 
 #import <SSCoreOC/CategoryHeader.h>
 #import <SSCoreOC/BaseViewWork.h>

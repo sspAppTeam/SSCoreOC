@@ -18,7 +18,6 @@
 {
     [super viewDidLoad];
 	self.title = @"导航Title";
-    [self setNavigationItemBackItem];
 }
 
 - (void)didReceiveMemoryWarning
