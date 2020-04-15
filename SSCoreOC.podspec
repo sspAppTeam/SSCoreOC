@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SSCoreOC'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '基础类库'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ base ,分类 等
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SSCoreOC/Classes/**/*'
+  s.source_files = 'SSCoreOC/Classes/*'
 
 #s.resources = 'xxx/xxx/x.png'
    s.resource_bundles = {

@@ -13,5 +13,5 @@
 #import "ColorConst.h"
 #import "LogConst.h"
 #import "AdaptConst.h"
-
+#import "UtilsMacro.h"
 #endif /* MacroHeader_h */
