@@ -91,7 +91,7 @@
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {return UIInterfaceOrientationPortrait;}
 #pragma mark - Status bar
 - (BOOL)prefersStatusBarHidden { return NO; }
-- (UIStatusBarStyle)preferredStatusBarStyle { return UIStatusBarStyleLightContent; }
+- (UIStatusBarStyle)preferredStatusBarStyle { return UIStatusBarStyleDefault; }
 - (UIStatusBarAnimation)preferredStatusBarUpdateAnimation { return UIStatusBarAnimationFade; }
 
 #pragma mark - 基类初始化设置
@@ -135,7 +135,7 @@
     }
 }
 
-
+//状态栏的样式：白色，黑色
 - (void)setStatusBarStyle:(StatusBarStyle)statusBarStyle {
     _statusBarStyle = statusBarStyle;
     if (statusBarStyle == StatusBarStyleWhite) {
