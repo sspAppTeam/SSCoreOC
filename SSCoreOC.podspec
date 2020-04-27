@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SSCoreOC'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '基础类库'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ base ,分类 等
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SSCoreOC/Classes/*'
+  s.source_files = 'SSCoreOC/Classes/**/*'
 
 #s.resources = 'xxx/xxx/x.png'
    s.resource_bundles = {
@@ -41,5 +41,10 @@ base ,分类 等
   # s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'UIKit'
    s.dependency 'SDWebImage'
+   s.dependency 'ReactiveObjC'
+   s.dependency 'AFNetworking'
+   s.dependency'CocoaSecurity'
+   s.dependency'MJExtension'
+    s.dependency'MJRefresh'
 end
 

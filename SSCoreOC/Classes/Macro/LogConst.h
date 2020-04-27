@@ -8,7 +8,8 @@
 
 #ifndef LogConst_h
 #define LogConst_h
-
+// 销毁打印
+#define SSDealloc NSLog(@"\n =========+++ %@  销毁了 +++======== \n",[self class])
 #ifdef DEBUG
 #define NSLog(format, ...) fprintf(stderr, "class：%s \nline： %d \nmethod：%s \nmessage：%s \n%s \n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__, __func__,[[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String], [@"----------------------------------------------" UTF8String]);
 #else

@@ -1,6 +1,6 @@
 {
   "name": "SSCoreOC",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "基础类库",
   "description": "base ,分类 等",
   "homepage": "https://github.com/sspAppTeam/SSCoreOC",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/sspAppTeam/SSCoreOC.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SSCoreOC/Classes/*",
+  "source_files": "SSCoreOC/Classes/**/*",
   "resource_bundles": {
     "SSCoreOCImg": [
       "SSCoreOC/Assets/*"
@@ -27,6 +27,21 @@
   "frameworks": "UIKit",
   "dependencies": {
     "SDWebImage": [
+
+    ],
+    "ReactiveObjC": [
+
+    ],
+    "AFNetworking": [
+
+    ],
+    "CocoaSecurity": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "MJRefresh": [
 
     ]
   }

@@ -5,42 +5,22 @@
 //  Created by ssp on 2019/12/10.
 //  Copyright © 2019 SSPSource. All rights reserved.
 //
-
 #ifndef SSConst_h
 #define SSConst_h
 
-#define WEAK_SELF __weak typeof(self) weakSelf = self
-#define STRONG_SELF __strong typeof(weakSelf) self = weakSelf
+typedef void (^VoidBlock)(void);
 
-//button点击事件
-#define kAddEventDefault(OBJ,SELECTOR)  [OBJ addTarget:self action:@selector(SELECTOR) forControlEvents:UIControlEventTouchUpInside]
+#pragma mark - 系统版本号
+/// 存储应用版本的key
+#define MHApplicationVersionKey   @"SBApplicationVersionKey"
+/// 应用名称
+#define MH_APP_NAME    ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"])
+/// 应用版本号
+#define MH_APP_VERSION ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"])
+/// 应用build
+#define MH_APP_BUILD   ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"])
 
-
-#ifndef judgeEmpty
-#define judgeEmpty
-///数组是否为空
-#define IsArrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0))
-
-///是否为空或是[NSNull null]
-#define NotNilAndNull(_ref)  (((_ref) != nil) && (![(_ref) isEqual:[NSNull null]]))
-
-#define IsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
-
-///字符串是否为空
-#define IsStrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""])) ||([(_ref)isEqualToString:@"null"]))
-
-//NSString为空返回
-#define StrEmptyReturn(_ref,_message)    if(((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""]) ||([(_ref)isEqualToString:@"null"]))) {[self alertMessage:_message];return;}
-
-//组装String
-#define MontageStr(_a,_b)  [NSString stringWithFormat:@"%@/%@",_a,_b]
-
-
-
-#define    __STRINGNOTNIL( __x )   (__x?__x:@"")
-
-#endif
-
+#pragma mark - 弱引用
 #ifndef weakify
 #if DEBUG
 #if __has_feature(objc_arc)

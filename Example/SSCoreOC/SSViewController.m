@@ -7,17 +7,16 @@
 //
 
 #import "SSViewController.h"
-
+#import "TestVM.h"
 @interface SSViewController ()
-
+@property (nonatomic, readwrite, strong) TestVM *viewModel;
 @end
 
 @implementation SSViewController
-
+@dynamic viewModel;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.title = @"导航Title";
 }
 
 - (void)didReceiveMemoryWarning

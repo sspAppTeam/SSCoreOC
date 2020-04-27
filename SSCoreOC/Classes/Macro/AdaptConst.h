@@ -9,15 +9,40 @@
 #ifndef AdaptConst_h
 #define AdaptConst_h
 
+#pragma mark - 状态栏
+//屏幕尺寸
+#define SCREENFRAME [[UIScreen mainScreen] bounds]  // 当前屏幕frmae
+#define SCREENWIDTH SCREENFRAME.size.width          // 当前屏幕宽度
+#define SCREENHEIGHT SCREENFRAME.size.height        // 当前屏幕高度
+
 //状态栏高度
 #define STATUSBAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
 //状态栏高度+导航栏高度
 #define NavAndStatusHight  (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
 
-//屏幕尺寸
-#define SCREENFRAME [[UIScreen mainScreen] bounds]  // 当前屏幕frmae
-#define SCREENWIDTH SCREENFRAME.size.width          // 当前屏幕宽度
-#define SCREENHEIGHT SCREENFRAME.size.height        // 当前屏幕高度
+#pragma mark - 适配iPhone X + iOS 11
+ /// iOS 11上发生tableView顶部有留白，原因是代码中只实现了heightForHeaderInSection方法，而没有实现viewForHeaderInSection方法。那样写是不规范的，只实现高度，而没有实现view，但代码这样写在iOS 11之前是没有问题的，iOS 11之后应该是由于开启了估算行高机制引起了bug。
+/// 适配iPhone X + iOS 11
+#define  MHAdjustsScrollViewInsets_Never(__scrollView)\
+do {\
+_Pragma("clang diagnostic push")\
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")\
+if ([__scrollView respondsToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];\
+NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];\
+NSInteger argument = 2;\
+invocation.target = __scrollView;\
+invocation.selector = @selector(setContentInsetAdjustmentBehavior:);\
+[invocation setArgument:&argument atIndex:2];\
+[invocation retainArguments];\
+[invocation invoke];\
+}\
+_Pragma("clang diagnostic pop")\
+} while (0)
+
+#pragma mark - 系统分辨率
+// 系统放大倍数
+#define ScreenScale [[UIScreen mainScreen] scale]
 
 /** 设备是否为iPhone 4/4S 分辨率320x480，像素640x960，@2x */
 #define iPhone4Size ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
