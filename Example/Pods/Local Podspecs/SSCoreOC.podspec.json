@@ -1,8 +1,8 @@
 {
   "name": "SSCoreOC",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "summary": "基础类库",
-  "description": "base ,分类 等",
+  "description": "base ,分类  RAC基础类 等",
   "homepage": "https://github.com/sspAppTeam/SSCoreOC",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sspAppTeam/SSCoreOC.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -44,5 +44,23 @@
     "MJRefresh": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "BaseView",
+      "source_files": "SSCoreOC/Classes/BaseView/**/*"
+    },
+    {
+      "name": "Macro",
+      "source_files": "DownLoader/Classes/Macro/**/*"
+    },
+    {
+      "name": "Category",
+      "source_files": "DownLoader/Classes/Category/**/*"
+    },
+    {
+      "name": "RACNet",
+      "source_files": "DownLoader/Classes/RACNet/**/*"
+    }
+  ]
 }

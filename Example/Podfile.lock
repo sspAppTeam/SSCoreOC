@@ -26,7 +26,39 @@ PODS:
   - SDWebImage (5.7.2):
     - SDWebImage/Core (= 5.7.2)
   - SDWebImage/Core (5.7.2)
-  - SSCoreOC (0.1.5):
+  - SSCoreOC (0.1.6):
+    - AFNetworking
+    - CocoaSecurity
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - SSCoreOC/BaseView (= 0.1.6)
+    - SSCoreOC/Category (= 0.1.6)
+    - SSCoreOC/Macro (= 0.1.6)
+    - SSCoreOC/RACNet (= 0.1.6)
+  - SSCoreOC/BaseView (0.1.6):
+    - AFNetworking
+    - CocoaSecurity
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+  - SSCoreOC/Category (0.1.6):
+    - AFNetworking
+    - CocoaSecurity
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+  - SSCoreOC/Macro (0.1.6):
+    - AFNetworking
+    - CocoaSecurity
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+  - SSCoreOC/RACNet (0.1.6):
     - AFNetworking
     - CocoaSecurity
     - MJExtension
@@ -60,7 +92,7 @@ SPEC CHECKSUMS:
   MJRefresh: 3153c59a363159092c08b2177ec3a7d09f90bfaf
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
-  SSCoreOC: 837eaf907c876162878a89f365bfd7c6982cb8d4
+  SSCoreOC: 530039626154528d5998508de494945c70c57001
 
 PODFILE CHECKSUM: 27109d152b3daf5ea2f3b816d8c69fcb81c004c4
 

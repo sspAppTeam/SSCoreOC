@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SSCoreOC'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = '基础类库'
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,20 @@ base ,分类  RAC基础类 等
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SSCoreOC/Classes/**/*'
+  s.subspec 'BaseView' do |ss|
+   ss.source_files = 'SSCoreOC/Classes/BaseView/**/*'
+   end
+
+   s.subspec 'Macro' do |ss|
+   ss.source_files = 'DownLoader/Classes/Macro/**/*'
+   end
+   s.subspec 'Category' do |ss|
+     ss.source_files = 'DownLoader/Classes/Category/**/*'
+     end
+   s.subspec 'RACNet' do |ss|
+       ss.source_files = 'DownLoader/Classes/RACNet/**/*'
+#       ss.dependency 'AFNetworking/NSURLSession'
+       end
 
 #s.resources = 'xxx/xxx/x.png'
    s.resource_bundles = {
